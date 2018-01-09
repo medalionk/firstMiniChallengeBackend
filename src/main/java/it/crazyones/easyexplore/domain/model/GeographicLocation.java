@@ -1,9 +1,7 @@
 package it.crazyones.easyexplore.domain.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -17,9 +15,13 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor(staticName="of")
 @EqualsAndHashCode(callSuper = false)
 public class GeographicLocation extends BaseEntity {
-    @Column(name = "longitude")
+    @NotEmpty
+    @NonNull
+    @Column(name = "longitude", nullable = false)
     private float longitude;
 
-    @Column(name = "latitude")
+    @NotEmpty
+    @NonNull
+    @Column(name = "latitude", nullable = false)
     private float latitude;
 }

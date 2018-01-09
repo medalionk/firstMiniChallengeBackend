@@ -31,6 +31,6 @@ public class Address extends BaseEntity {
     @Column(name = "country", nullable = false)
     private String country;
 
-    @Column(name = "zip_code", nullable = false)
+    @Column(name = "zip_code")
     private String zipcode;
 }
