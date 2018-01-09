@@ -13,11 +13,18 @@ import org.hibernate.validator.constraints.NotEmpty;
 @EqualsAndHashCode(callSuper=false)
 @NoArgsConstructor(force = true)
 public class GeographicLocationDTO implements DTO<GeographicLocation> {
-    @NotEmpty
+    @NonNull
+    private String name;
+
+    @NonNull
+    private String state;
+
+    @NonNull
+    private String country;
+
     @NonNull
     private float longitude;
 
-    @NotEmpty
     @NonNull
     private float latitude;
 

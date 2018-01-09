@@ -16,7 +16,7 @@ import java.util.List;
 public class Attraction extends IdentifiableEntity {
     @NonNull
     @Column(name="name")
-    private String name;
+    private String attractionName;
 
     @Column(name="about")
     private String about;

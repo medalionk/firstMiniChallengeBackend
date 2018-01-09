@@ -17,6 +17,21 @@ import javax.persistence.Embeddable;
 public class GeographicLocation extends BaseEntity {
     @NotEmpty
     @NonNull
+    @Column(name = "location_name")
+    private String name;
+
+    @NotEmpty
+    @NonNull
+    @Column(name = "state")
+    private String state;
+
+    @NotEmpty
+    @NonNull
+    @Column(name = "country")
+    private String country;
+
+    @NotEmpty
+    @NonNull
     @Column(name = "longitude", nullable = false)
     private float longitude;
 

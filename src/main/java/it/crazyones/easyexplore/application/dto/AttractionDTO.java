@@ -19,7 +19,7 @@ public class AttractionDTO extends ResourceDTO<Attraction> {
     private String _id;
 
     @NonNull
-    private String name;
+    private String attractionName;
     private String about;
     private GeographicLocation location;
     private List<String> images;
