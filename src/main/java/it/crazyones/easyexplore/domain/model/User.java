@@ -29,6 +29,9 @@ public abstract class User extends AuditingEntity {
     @Column(name = "email")
     protected String email;
 
+    @Column(name = "username")
+    protected String username;
+
     @Column(name = "password")
     protected String password;
 

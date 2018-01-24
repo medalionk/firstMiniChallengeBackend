@@ -11,6 +11,7 @@ import javax.persistence.Column;
 import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import java.time.Instant;
+import java.util.Date;
 
 @Data
 @MappedSuperclass
@@ -18,7 +19,7 @@ import java.time.Instant;
 @EqualsAndHashCode(callSuper = false)
 public abstract class AuditingEntity extends IdentifiableEntity {
     @CreatedDate
-    @Column(name = "created_date", nullable = false)
+    @Column(name = "created_date")
     @JsonIgnore
     protected Instant createdDate = Instant.now();
 

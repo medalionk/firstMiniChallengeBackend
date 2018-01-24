@@ -23,3 +23,11 @@ INSERT INTO images (id, image)
 VALUES ('103', 'https://mrwallpaper.com/wp-content/uploads/Colosseum-Rome-1920x1080.jpg');
 INSERT INTO images (id, image)
 VALUES ('104', 'https://mrwallpaper.com/wp-content/uploads/Colosseum-Rome-1920x1080.jpg');
+
+INSERT INTO client (id, city, country, street, zip_code, email, first_name, last_name, password, phone)
+VALUES ('200', 'Naples', 'Italy', 'Marceto', '51009', 'a@b.c', 'Mattin', 'Abj', 'werttr', '56655555');
+
+
+INSERT INTO booking (amount, currency, label, end_date, start_date, client_id)
+VALUES ('12', 'EUR', '12.0', '2018/1/9', '2018/1/10', '200');
+
